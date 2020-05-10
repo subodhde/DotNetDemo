@@ -30,3 +30,12 @@ steps:
   inputs: 
      command: restore
      projects: '*.sln'
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs: 
+     command: build
+     projects: '*.sln'
+     arguements: '--configuration Release'
+
+     
