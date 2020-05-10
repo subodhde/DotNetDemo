@@ -25,6 +25,9 @@ steps:
     packageType: runtime
   displayName: 'Install .Net SDK 2.2.x'
 
+- script: NuGet Restore
+  displayName: 'NuGet Restore
+    '
 - task: DotNetCoreCLI@2
   displayName: Restore
   inputs: 
@@ -38,4 +41,4 @@ steps:
      projects: '*.sln'
      arguements: '--configuration Release'
 
-     
+
